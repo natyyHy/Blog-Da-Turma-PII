@@ -3,7 +3,7 @@
 :root {
     --color-1:#FFFFFF;
     --color-2:#0F1819;
-    --color-3:#1F41BB;
+    --color-3:#828282;
     --color-4:#9340FF;
     --color-5:#FF3C5F;
     --color-6:#16093b;
@@ -13,6 +13,7 @@
     --color-10:#212121;
     --color-11:#25232b;
     --color-12:#8257E6;
+    --color-13:#A40EE4;
 }
 
 body {
@@ -32,6 +33,18 @@ h3 {
     font-size: 1.5rem;
     text-align: center;
 }
+
+h3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15%;
+    height: 0.3rem;
+    border-radius: 2rem;
+    margin-top: 0.4rem;
+    background-image: linear-gradient(90deg, var(--color-12) 0%, var(--color-13) 92.32%);
+}
+
 
 header {
     display: flex;
@@ -71,6 +84,67 @@ article {
     max-width: 700px;
 }
 
+footer {
+    border-top: 2px solid var(--color-4);
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul, nav li, aside ul, aside li {
+    list-style: none;
+    margin: 0;
+    padding: 0.2rem 5px;
+}
+
+nav a, aside a {
+    text-decoration: none;
+    color: inherit;
+    border: 0.1rem solid var(--color-4);
+    padding: 10px 1rem;
+    border-radius: 1.5rem;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+    
+}
+
+nav a:hover, aside a:hover{
+    transform: scale(0.90);
+    background-image: linear-gradient(90deg, var(--color-12) 0%, var(--color-13) 92.32%);
+    color: var(--color-1);
+}
+
+.container-autor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-autor a {
+    border: 0.1rem solid var(--color-12);
+    text-decoration: none;
+    color: var(--color-1);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: transform 0.3s ease,color 0.3s ease;
+}
+
+.container-autor a:hover{
+    background-image: linear-gradient(90deg, var(--color-12) 0%, var(--color-13) 92.32%);
+    transform: translateY(-5px)
+}
+
+.data-autor {
+    font-style: italic;
+    font-weight: 200;
+    color: var(--color-3);
+}
+
+
 @media screen and (max-width:768px) {
     #leiaute-flex {
         flex-direction: column;
@@ -80,6 +154,28 @@ article {
     nav, aside {
         width: 70%;
         margin: 1rem 0;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .tabela1 , .tabela2 {
+        width: 50%;
+    }
+
+    table, th, td {
+        font-size: 0.8rem;
+    }
+
+    h3::after {
+        width: 65%;
+    }
+
+    .container-autor {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
 
 }
