@@ -384,6 +384,9 @@ nav a:hover, aside a:hover{
     transform: scale(0.97);
 }
 
+#listas a, #ifpi a {
+    color: var(--color-12);
+}
 
 @media screen and (max-width:768px) {
     #leiaute-flex {
