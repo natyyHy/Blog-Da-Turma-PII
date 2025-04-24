@@ -234,6 +234,45 @@ nav a:hover, aside a:hover{
     transform: scale(0.97);
 }
 
+#buscas form input[type='text'] {
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: 0.1rem solid var(--color-13);
+    margin-right: 20px;
+}
+
+#buscas form input[type='submit'] {
+    margin-top: 20px;
+    padding: 0.5rem;
+    border-radius: 50px;
+    outline: none;
+    border: 0.1rem solid var(--color-13);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-14);
+    background: linear-gradient(90deg , var(--color-13) 0%, var(--color-4) 92.32%);
+    cursor: pointer;
+    transition: transform 0.3s ease,color 0.3s ease;
+}
+
+#buscas select {
+    margin-top: 20px;
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: 0.1rem solid var(--color-13);
+    margin-right: 20px;
+}
+
+#buscas form input[type='submit']:hover {
+    color: var(--color-1);
+    transform: scale(0.97);
+}
+
+
 @media screen and (max-width:768px) {
     #leiaute-flex {
         flex-direction: column;
