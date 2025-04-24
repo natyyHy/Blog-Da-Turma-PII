@@ -14,6 +14,7 @@
     --color-11:#25232b;
     --color-12:#8257E6;
     --color-13:#A40EE4;
+    --color-14:#d6d2d2;
 }
 
 body {
@@ -144,6 +145,94 @@ nav a:hover, aside a:hover{
     color: var(--color-3);
 }
 
+#campos-modernos form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#campos-modernos form input {
+    margin-top: 10px;
+}
+
+#campos-modernos form input[type='email'] {
+    padding: 1rem;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: 0.1rem solid var(--color-13);
+}
+
+#campos-modernos form input[type='date']{
+    padding: 9px 10px;
+    max-width: 150px;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    outline: none;
+    border: 0.1rem solid var(--color-13);
+    font-family: 'Poppins',sans-serif;
+}
+
+#campos-modernos form input[type='color'] {
+    outline: none;
+    border: 0.1rem solid var(--color-13);
+    border-radius: 30px;
+    max-width: 100px;
+    
+}
+
+#campos-modernos form input[type='number'] {
+    max-width: 150px;
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 30px;
+    border: 0.1rem solid var(--color-13);
+}
+
+.container-range {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#campos-modernos form .container-range input[type='range'] {
+    max-width: 200px;
+}
+
+#campos-modernos form .container-range #nota-atual {
+    background: linear-gradient(90deg , var(--color-13) 0%, var(--color-4) 92.32%);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.container-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#campos-modernos form input[type='submit'] {
+    margin-bottom: 50px;
+    margin-top: 40px;
+    padding: 1rem 7rem;
+    border-radius: 50px;
+    outline: none;
+    border: 0.1rem solid var(--color-13);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-14);
+    background: linear-gradient(90deg , var(--color-13) 0%, var(--color-4) 92.32%);
+    cursor: pointer;
+    transition: transform 0.3s ease,color 0.3s ease;
+}
+
+#campos-modernos form input[type='submit']:hover {
+    color: var(--color-1);
+    transform: scale(0.97);
+}
 
 @media screen and (max-width:768px) {
     #leiaute-flex {
