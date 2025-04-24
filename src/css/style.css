@@ -115,6 +115,118 @@ nav a:hover, aside a:hover{
     color: var(--color-1);
 }
 
+.preenchimento {
+    background-color: green;
+}
+
+.bordas1 {
+    border: 1px solid white;
+}
+
+.bordas2 {
+    border-top: 2px dotted green;
+    border-right: 2px dashed blue;
+    border-bottom: 2px dotted green;
+    border-left: 2px dashed blue;
+}
+
+.margens {
+    border: 1px solid white;
+    margin: 50px 10px 10px 50px;
+    padding: 10px 0px 10px 10px;
+    
+}
+
+.comprimento {
+    width: 50%;
+    background-color: cyan;
+}
+
+.lista-seta1 {
+    list-style-image: url("imgs/seta1.png");
+}
+
+.lista-seta2 {
+    list-style-image: url("imgs/seta2.png");
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.direita {
+    text-align: right;
+}
+
+.verdana {
+    font-family: verdana;
+}
+
+.monospace {
+    font-family: monospace, 'Courier New', Courier;
+}
+
+.calibri {
+    font-family:  Calibri, 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+
+.dancing {
+    font-family: "Dancing Script", cursive;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.italico {
+    font-style: italic;
+}
+
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.vermelha {
+    color: #ff0000;
+}
+
+.verde {
+    color: #00ff00;
+}
+
+.azul {
+    color: #0000ff;
+}
+
+.preta {
+    color: #000000
+}
+
+.branca {
+    color: #ffffff
+}
+
+.cinza-claro {
+    color: #aaaaaa
+}
+
+.cinza-escuro {
+    color: #666666
+}
+
+.amarelo {
+    color: #ffff00;
+}
+
+.rosa {
+    color: #ffc0cb;
+}
+
 .container-autor {
     display: flex;
     align-items: center;
