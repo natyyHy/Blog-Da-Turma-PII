@@ -46,23 +46,27 @@
                 <h2>Campos Modernos</h2>
 
                 <form>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="digite o seu email">
                     <br>
-                    <label for="data">Data:</label>
+                    <label for="data">Data</label>
                     <input type="date" name="data" id="data" required>
                     <br>
-                    <label for="cor">Cor:</label>
+                    <label for="cor">Cor</label>
                     <input type="color" name="cor" id="cor" required>
                     <br>
-                    <label for="idade">Idade:</label>
+                    <label for="idade">Idade</label>
                     <input type="number" name="idade" id="idade" min="0" max="130" required>
                     <br>
-                    <label for="nota">Nota:</label>
-                    <input type="range" name="nota" id="nota" min="0" max="10" required value="5">
-                    <span id="nota-atual"></span>
+                    <label for="nota">Nota</label>
+                    <div class="container-range">
+                        <input type="range" name="nota" id="nota" min="0" max="10" required value="5">
+                        <span id="nota-atual"></span>
+                    </div>
                     <br>
-                    <input type="submit" value="Enviar">
+                    <div class="container-submit">
+                        <input type="submit" value="Enviar">
+                    </div>
                     <script>
                         function atualizaNota() {
                             let nota = document.getElementById('nota').value;
@@ -79,7 +83,7 @@
                     </div>
                 </form>
             </article>
-            <article>
+            <article id="buscas">
                 <h2>Formulários</h2>
                 
                 <p>Busca no google</p>
@@ -109,7 +113,7 @@
                     <a href="#topo"><img src="src/css/imgs/seta.png" alt="icon seta"></a>
                 </div>
             </article>
-            <article>
+            <article id="tabelas">
                 <h2>Tabelas</h2>
     
                 <p>Abaixo uma tabela 5 linhas e com as colunas numeração, produto, quantidade, e uma linha de totalização
@@ -177,7 +181,7 @@
                     <a href="#topo"><img src="src/css/imgs/seta.png" alt="icon seta"></a>
                 </div>
             </article>
-            <article>
+            <article id="listas">
                 <h2>Lista de links</h2>
                 
                 <ul>
@@ -195,7 +199,7 @@
                     <a href="#topo"><img src="src/css/imgs/seta.png" alt="icon seta"></a>
                 </div>
             </article>        
-            <article>
+            <article id="listas">
                 <h2>Listas</h2>
                 
                 <p>Lista não ordenadas de compras</p>
@@ -278,7 +282,7 @@
                     <a href="#topo"><img src="src/css/imgs/seta.png" alt="icon seta"></a>
                 </div>
             </article>    
-            <article>
+            <article id="espacamentos">
                 <h2>Alinhamentos</h2>
                 
                 <p class="justificado">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt officia similique
@@ -300,7 +304,7 @@
                         <a href="#topo"><img src="src/css/imgs/seta.png" alt="icon seta"></a>
                     </div>
             </article>
-            <article>
+            <article id="fontes">
                 <h2>Fontes</h2>
                 
                 <p class="verdana">Lorem Ipsum - Verdana</p>
@@ -313,7 +317,7 @@
                     <a href="#topo"><img src="src/css/imgs/seta.png" alt="icon seta"></a>
                 </div>
             </article>
-            <article>
+            <article id="fontes">
                 <h2>Negrito, itálico etc...</h2>
                 
                 <p class="negrito">Negrito</p>
@@ -326,7 +330,7 @@
                 </div>
             </article>
     
-            <article>
+            <article id="cores">
                 <h2>Estudando sobre cores</h2>
                 
                 <p class="vermelha">Vermelha</p>
@@ -344,7 +348,7 @@
                     <a href="#topo"><img src="src/css/imgs/seta.png" alt="icon seta"></a>
                 </div>
                 </article>
-                <article>
+                <article id="simbolos">
                     <h2>Aprendendo sobre símbolos e emojis</h2>
                     
                     <p>A primeira tag de uma página é a tag é a &lt;html&gt;</p>
