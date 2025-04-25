@@ -388,6 +388,17 @@ nav a:hover, aside a:hover{
     color: var(--color-12);
 }
 
+#tabelas th {
+    background: linear-gradient(90deg , var(--color-13) 0%, var(--color-4) 92.32%);
+    padding: 0.25rem;
+}
+
+#tabelas td {
+    border: 2px solid var(--color-4); /* muda a cor da borda */
+    border-collapse: collapse;
+    padding: 0.25rem;
+}
+
 @media screen and (max-width:768px) {
     #leiaute-flex {
         flex-direction: column;
@@ -421,4 +432,14 @@ nav a:hover, aside a:hover{
         gap: 8px;
     }
 
+    #tabelas th, #tabelas td {
+        padding: 0rem;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    table, th, td {
+        font-size: 0.6rem;
+    }
 }
