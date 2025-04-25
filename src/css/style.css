@@ -104,8 +104,6 @@ nav a, aside a {
     border-radius: 1.5rem;
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
-    
-    
 }
 
 nav a:hover, aside a:hover{
@@ -420,6 +418,50 @@ nav a:hover, aside a:hover{
 }
 
 
+@media screen and (max-width:1124px) {
+    h3::after{
+        width: 10%;
+        height: 0.2rem;
+        border-radius: 2rem;
+        margin-top: 0.3rem;
+    }
+
+    article, aside, nav {
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    nav, aside {
+        width: 10%;
+        min-width: auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    article {
+        max-width: auto;
+    }
+
+    nav ul, nav li, aside ul, aside li {
+        padding: 0.1rem 3px;
+    }
+    
+    nav a, aside a {
+        font-size: 0.5rem;
+        padding: 4px 0.4rem;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    #tabelas th, #tabelas td {
+        padding: 0.2rem;
+    }
+
+}
+
 @media screen and (max-width:768px) {
     #leiaute-flex {
         flex-direction: column;
@@ -454,13 +496,14 @@ nav a:hover, aside a:hover{
     }
 
     #tabelas th, #tabelas td {
-        padding: 0rem;
+        padding: 0.1rem;
     }
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:376px) {
     table, th, td {
         font-size: 0.6rem;
+        padding: 0rem;
     }
 }
