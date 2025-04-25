@@ -62,7 +62,6 @@ header {
 }
 
 article, aside, nav {
-    
     border-radius: 20px;
     border: 2px solid var(--color-12);
     padding: 2rem;
@@ -233,6 +232,7 @@ nav a:hover, aside a:hover{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 1.5rem;
 }
 
 .container-autor a {
@@ -244,6 +244,26 @@ nav a:hover, aside a:hover{
     border-radius: 10px;
     padding: 10px 15px;
     transition: transform 0.3s ease,color 0.3s ease;
+}
+
+.autor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.autor p {
+    text-align: start;
+}
+
+.autor img {
+    border: 2px solid var(--color-12);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    margin-left: 0.75rem;
 }
 
 .container-autor a:hover{
@@ -398,6 +418,7 @@ nav a:hover, aside a:hover{
     border-collapse: collapse;
     padding: 0.25rem;
 }
+
 
 @media screen and (max-width:768px) {
     #leiaute-flex {
