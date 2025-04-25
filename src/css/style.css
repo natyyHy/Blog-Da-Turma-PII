@@ -385,7 +385,7 @@ nav a:hover, aside a:hover{
 }
 
 #listas a, #ifpi a {
-    color: var(--color-12);
+    color: var(--color-4);
 }
 
 #tabelas th {
